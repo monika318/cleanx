@@ -9,6 +9,7 @@ import Project from './components/Project';
 import Swiper from './components/Swiper';
 // import StickyHeader from './components/StickyHeader';
 import TopHeader from './components/TopHeader';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -18,11 +19,13 @@ function App() {
       <TopHeader />
       <Navbar />
       <Hero />
-      <Featured />
+      <Swiper />
+      {/* <Featured /> */}
       <About />
       <Project />
       <Hire />
-      <Swiper />
+
+      <Contact />
     </>
   );
 }

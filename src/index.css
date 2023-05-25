@@ -92,7 +92,7 @@ i {
   left: 6rem;
   top: 10rem;
 }
-.hero h6 {
+h6 {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -135,12 +135,43 @@ i {
 }
 
 /* Featured Section */
-.Featured-section {
+.featured-section {
+  padding: 50px 20px;
+}
+.featured-section h4 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
   text-transform: uppercase;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
 }
 
 /* about */
-
+.about {
+  margin-top: 40px;
+}
 .about h6 {
   font-size: 14px;
   line-height: 24px;
@@ -310,25 +341,69 @@ body {
   padding: 0;
 } */
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
+/* Contact */
+.Contact {
+  margin-top: 3rem;
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.Contact h6 {
+  margin-bottom: 13px;
+  letter-spacing: 1.3px;
+  padding-left: 45px;
+  color: #00a0eb;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.Contact h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #001070;
+}
+
+#contactrow {
+  align-items: center;
+  margin: 2rem 2rem;
+  border: 2px solid grey;
+}
+
+.infoCol {
+  background-color: #001070;
+  color: white;
+  position: relative;
+}
+.contentBox {
+  padding-left: 70px;
+  padding-right: 60px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+}
+.content-box p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 23px;
+}
+.Contactgrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+.Contact input {
+  height: 61px;
+  padding: 20px;
+}
+.Contactgrid-item {
+  padding: 10px;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
